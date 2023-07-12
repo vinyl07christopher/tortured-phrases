@@ -1,0 +1,196 @@
+
+/* choose file upload as the design */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  background: #f5faff;
+}
+
+.parent {
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 3px 9px #0005;
+  /* display: flex; */
+}
+
+.file-upload {
+  flex: 1;
+  text-align: center;
+  border: 3px dashed rgb(210, 227, 244);
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.file-upload p {
+  font-size: 0.87rem;
+  margin-top: 10px;
+  color: #bbcada;
+}
+
+.file-upload input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+/* to desgin will be button on clear document */
+
+.clear-document-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f44336;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: buttonFadeIn 1s forwards;
+}
+
+.clear-document-button:hover {
+  background-color: #d32f2f;
+  animation: buttonShake 0.5s infinite;
+}
+
+.clear-document-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.3);
+}
+
+.clear-document-button svg {
+  margin-right: 8px;
+}
+
+@keyframes buttonFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonShake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+/* to design an upload button in style */
+
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #1976d2;
+}
+
+.upload-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.3);
+}
+
+.upload-button svg {
+  margin-right: 8px;
+}
+
+
+
+
+/* select file in css */
+
+
+.file-icon {
+  color: blue; /* Change the color as desired */
+  transition: color 0.3s ease; /* Transition animation for color change */
+}
+
+.file-icon:hover {
+  color: red; /* Change the color on hover */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-enter {
+  opacity: 0;
+}
+
+.animation-enter-active {
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.animation-exit {
+  opacity: 1;
+}
+
+.animation-exit-active {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out;
+}
+
+
+/* Heading tag on the title*/
+
